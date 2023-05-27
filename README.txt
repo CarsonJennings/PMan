@@ -12,7 +12,7 @@ Supported Commands:
 	bg: The bg command is meant to execute a program in the current directory and run it in the background.
 		Usage: enter the command bg followed by the program you would like to execute and any arguments that program takes. 
 		(e.g. "bg foo arg1 arg2")
-		Errors: If fork() fails the program will print "Failed to create a new process". If the program passed in after bg is not in 			the working directory or does not exist the program will prompt for user input again.
+		Errors: If fork() fails the program will print "Failed to create a new process". If the program passed in after bg is not in the working directory or does not exist the program will prompt for user input again.
 
 	bglist: the bglist command will print out a list of all proccess that are currently running or have been stopped.
 		Usage: enter the command bglist.
@@ -23,7 +23,7 @@ Supported Commands:
 				Errors: None
 
 	bgkill: The bgkill command will send a signal to terminate a given process
-		Usage: enter the command bgkill followed by the pid you would like to kill (e.g. bgkill 456). The process will then be 				terminated and will no longer show in bglist
+		Usage: enter the command bgkill followed by the pid you would like to kill (e.g. bgkill 456). The process will then be terminated and will no longer show in bglist
 		Errors: If the pid does not exist the program will print out that the PID does not exist and prompt for user input.
 
 	bgstop: The bgstop command will send a signal to stop a pid that is currently running.
@@ -44,4 +44,4 @@ Supported Commands:
 				rss   -  144
 				voluntary_ctxt_switches:        137080
 				nonvoluntary_ctxt_switches:     19
-		Errors: If the pid entered is not a valid pid then the program will print out "Error: Process [pid] does not exist" and prompt 		for user input.
+		Errors: If the pid entered is not a valid pid then the program will print out "Error: Process [pid] does not exist" and prompt for user input.
